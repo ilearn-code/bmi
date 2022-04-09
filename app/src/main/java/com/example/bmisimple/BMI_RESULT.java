@@ -29,7 +29,7 @@ public class BMI_RESULT extends AppCompatActivity {
         // display the string into textView
          cal=nw+nh;
 
-        rh.setText(str1+str2);
+        rh.setText(str1);
         rcal1 = (TextView) findViewById(R.id.rcal);
         rcal1.setText(String.valueOf(cal));
 
