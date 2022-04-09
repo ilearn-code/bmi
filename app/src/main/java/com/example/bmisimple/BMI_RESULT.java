@@ -21,9 +21,9 @@ public class BMI_RESULT extends AppCompatActivity {
         rh = (TextView) findViewById(R.id.hid);
 
         // create the get Intent object
-//        Intent intent = getIntent();
-//        str1 = intent.getStringExtra("message_key1");
-//        str2 = intent.getStringExtra("message_key2");
+       Intent intent = getIntent();
+       str1 = intent.getStringExtra("message_key1");
+      str2 = intent.getStringExtra("message_key2");
         nw=Integer.parseInt(str1);
         nh=Integer.parseInt(str2);
         // display the string into textView
