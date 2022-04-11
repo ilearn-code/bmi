@@ -32,7 +32,7 @@ public class BMI_RESULT extends AppCompatActivity {
         rh.setText(str1+str2);
         rcal1 = (TextView) findViewById(R.id.rcal);
         rcal1.setText(String.valueOf(cal));
-
+//hey
     }
 }
 
