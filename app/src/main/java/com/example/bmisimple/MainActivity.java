@@ -9,32 +9,35 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
+    EditText rw,rh;
 
-    private Button move;
-   EditText s1,s2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        move=findViewById(R.id.move);
-        s1=(EditText)findViewById(R.id.idheight);
-        s2=(EditText)findViewById(R.id.idweight);
+
+
+        Button move = findViewById(R.id.move);
+        rw=(EditText) findViewById(R.id.editTextNumberDecimal);
+        rh=(EditText) findViewById(R.id.editTextNumberDecimal2);
 
 
         move.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              String str1 = s1.getText().toString();
-                String str2 = s2.getText().toString();
-                Intent intent = new Intent(getApplicationContext(), BMI_RESULT.class);
+                double num1 = Double.parseDouble(rw.getText().toString());
+                double num2 = Double.parseDouble(rh.getText().toString());
 
+                double BMI =num1/(num2*num2);
+                String str= Double.toString(BMI);
 
-              intent.putExtra("message_key1", str1);
-               intent.putExtra("message_key2", str2);
-
+                Intent intent = new Intent(MainActivity.this, BMI_RESULT.class);
+                intent.putExtra("BMI",str);
                 startActivity(intent);
 
             }
+
+
         });
     }
 }

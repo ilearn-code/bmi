@@ -7,33 +7,24 @@
     tools:context=".BMI_RESULT">
 
     <TextView
-        android:id="@+id/wid"
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="332dp"
         android:text="TextView"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/hid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="TextView"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="284dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="188dp"
+        android:text="go back"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wid" />
-
-    <TextView
-        android:id="@+id/rcal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hid" />
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 </androidx.constraintlayout.widget.ConstraintLayout>
